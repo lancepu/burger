@@ -1,0 +1,7 @@
+{{!-- Add a devour button next to burgers that are not devoured --}}
+<li class="list-group-item">
+	{{name}}
+	{{#unless devoured}}
+	<button type="button" class="btn btn-devour devour" data-id="{{id}}">DEVOUR!</button>
+	{{/unless}}
+</li>
